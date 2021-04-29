@@ -2,11 +2,11 @@ import React from 'react';
 import NomineeList from './NomineeList';
 
 
-const Category = () => {
+const Category = ({ category }) => {
   return (
     <div>
-      <h5>{/** CATEGORY NAME HERE - REPLACE WITH MATERIAL CARD HEADER*/}</h5>
-      <NomineeList />
+      <h5>{category.title}</h5>
+      <NomineeList nominees={category.items}/>
     </div>
   )
 }
