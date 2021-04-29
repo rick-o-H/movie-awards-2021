@@ -1,12 +1,8 @@
 import React from 'react';
 import Nominee from './Nominee';
 
-const NomineeList = () => {
-  return (
-    <div>
-      'Nominee List'
-    </div>
-  )
-}
+const NomineeList = ({ nominees }) => (
+  nominees.map((nominee) => (<Nominee nominee={nominee} key={nominee.id} />))
+);
 
 export default NomineeList;

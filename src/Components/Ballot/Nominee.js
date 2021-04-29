@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const Nominee = () => {
+const Nominee = ({ nominee }) => {
   return (
     <div>
-      'Nominee card'
+      <p>{nominee.title}</p>
+      <img src={nominee.photoUrL} alt="Movie"></img>
     </div>
   )
 }

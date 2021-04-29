@@ -20,7 +20,7 @@ const Ballot = () => {
   return (
     <div className='ballot'>
       <h1>AWARDS 2021</h1>
-      <CategoryList ballots={ballotData}/>
+      <CategoryList categories={ballotData}/>
       <BallotSubmission />
     </div>
   )

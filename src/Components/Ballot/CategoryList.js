@@ -1,12 +1,8 @@
 import React from 'react';
+import Category from './Category';
 
-
-const CategoryList = () => {
-  return (
-    <div className='ballot'>
-      'Your Code Goes Here'
-    </div>
-  )
-}
+const CategoryList = ({ categories }) => (
+  categories.map((category) => (<Category category={category} key={category.id} />))
+);
 
 export default CategoryList;
