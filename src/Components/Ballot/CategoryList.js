@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Ballot = () => {
+
+const CategoryList = () => {
   return (
     <div className='ballot'>
       'Your Code Goes Here'
@@ -8,4 +9,4 @@ const Ballot = () => {
   )
 }
 
-export default Ballot;
+export default CategoryList;
