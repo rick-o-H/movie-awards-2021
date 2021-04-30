@@ -15,6 +15,12 @@
     color: $font-color-hover;
     background-color: $nominee-card-and-submit-button-hover;
   }
+  button {
+    background-color: darkgray;
+    &:hover {
+      background-color: rgb(192, 189, 189);
+    }
+  }
 }
 
 .selected-nominee {
@@ -22,4 +28,7 @@
   padding: 5px;
   background-color: $nominee-card-selected;
   transition: all .5s;
+  button {
+    opacity: 0.6;
+  }
 }

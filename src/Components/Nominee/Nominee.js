@@ -5,10 +5,21 @@ const Nominee = ({ nominee, winner, setWinner }) => {
     setWinner(nominee);
   }
   return (
-    <div className={nominee.id === winner.id ? 'selected-nominee' : 'nominee'} onClick={() => {handleSelection()}}>
+    nominee.id === winner.id ?
+      <div className='selected-nominee'>
       <p>{nominee.title}</p>
       <img src={nominee.photoUrL} className="avatar" alt="Movie"></img>
-    </div>
+      <div></div>
+      <button disabled>Select Nominee</button>
+      </div>
+      :
+      <div className='nominee'>
+        <p>{nominee.title}</p>
+        <img src={nominee.photoUrL} className="avatar" alt="Movie"></img>
+        <div></div>
+        <button onClick={() => {handleSelection()}}>Select Nominee</button>
+      </div>
+
   )
 }
 
