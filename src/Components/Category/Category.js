@@ -1,11 +1,12 @@
+import './Category.scss';
 import React from 'react';
-import NomineeList from './NomineeList';
+import NomineeList from '../Nominee/NomineeList';
 
 
 const Category = ({ category }) => {
   return (
-    <div>
-      <h5>{category.title}</h5>
+    <div className='category'>
+      <header>{category.title}</header>
       <NomineeList nominees={category.items}/>
     </div>
   )

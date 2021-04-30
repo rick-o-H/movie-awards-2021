@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import CategoryList from './Ballot/CategoryList';
-import BallotSubmission from './Ballot/BallotSubmission';
-import api from '../Api/Api';
+import CategoryList from '../Category/CategoryList';
+import BallotSubmission from './BallotSubmission';
+import api from '../../Api/Api';
 
 const Ballot = () => {
   const [ballotData, setBallotData] = useState([]);
@@ -18,7 +18,7 @@ const Ballot = () => {
   }, [])
 
   return (
-    <div className='ballot'>
+    <div>
       <h1>AWARDS 2021</h1>
       <CategoryList categories={ballotData}/>
       <BallotSubmission />
