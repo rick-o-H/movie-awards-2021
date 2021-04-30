@@ -5,9 +5,8 @@
   border-radius: 50%;
 }
 
-div {
+.nominee {
   color: $font-color-default;
-  border-radius: 5px;
   padding: 5px;
   background-color: $nominee-card-and-submit-button-default;
   border: 1px #017263;
@@ -16,4 +15,11 @@ div {
     color: $font-color-hover;
     background-color: $nominee-card-and-submit-button-hover;
   }
+}
+
+.selected-nominee {
+  color: $font-color-default;
+  padding: 5px;
+  background-color: $nominee-card-selected;
+  transition: all .5s;
 }
