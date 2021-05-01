@@ -8,20 +8,31 @@ git clone https://github.com/rick-o-H/movie-awards-2021.git
 ```sh
 cd movie-awards-2021
 ```
-3. Install dependencies
+3. Install dependencies:
 ```sh
 yarn
 ```
-4. Start the api server
+4. Start the api server:
 ```sh
 yarn backend
 ```
-5. In a new terminal, start the react app
+5. In a new terminal, start the react app:
 ```sh
 yarn start
 ```
-6. A new browser window should appear. Make your selections for each category and then click the Submit Ballot button to view results.
-
+6. A new browser window should appear. Make your selections for each category and then click the Submit Ballot button to view results. IF YOU RECEIVE AN ERROR REGARDING A MISMATCH IN ESLINT DEPENDENCIES AFTER RUNNING 'yarn start', then PLEASE FOLLOW STEPS 7 - 9.
+7. Create a .env file at the root directory:
+```sh
+touch .env
+```
+8. Add the following environment variable to .env:
+```sh
+SKIP_PREFLIGHT_CHECK=true
+```
+9. Start the react app:
+```sh
+yarn start
+```
 
 
 
