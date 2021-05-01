@@ -1,31 +1,58 @@
-// $page-background: #0D2436;
-// $font-color-default: #FFFFFF;
-// $font-color-hover: #CCCCCC;
-// $nominee-card-and-submit-button-default: #009B86;
-// $nominee-card-and-submit-button-hover: #34AC9C;
-// $nominee-card-selected: #099BB3;
+$page-background: #0D2436;
+$font-color-default: #FFFFFF;
+$font-color-hover: #CCCCCC;
+$nominee-card-and-submit-button-default: #009B86;
+$nominee-card-and-submit-button-hover: #34AC9C;
+$nominee-card-selected: #099BB3;
 
-// .ballot {
-//   div {
-//     color: $font-color-default;
-//     border-radius: 5px;
-//     padding: 5px;
-//     background-color: $nominee-card-and-submit-button-default;
-//     border: 1px #017263;
-//     transition: all .5s;
-//     &:hover {
-//       color: $font-color-hover;
-//       background-color: $nominee-card-and-submit-button-hover;
-//     }
-//   }
-//   display: grid;
-//   grid-template-columns: repeat(3, minmax(0,1fr));
-//   gap: 20px;
-// }
+.avatar {
+  width: 50%;
+  height: 50%
+}
 
-// header {
-//   margin-top: 20px;
-//   background-color:darkgray;
-//   grid-column: 1 / 4;
-//   grid-row: 1;
-// }
+.submit-button {
+  background-color: $nominee-card-and-submit-button-default;
+  color: $font-color-default;
+  float: right;
+  font-size: 24px;
+  border-radius:6px;
+  border:1px solid $nominee-card-and-submit-button-default;
+  margin-right: 20px;
+  margin-top: -60px;
+  padding: 10px;
+  &:hover {
+    background-color: $nominee-card-and-submit-button-hover;
+    color: $font-color-hover;
+  }
+}
+
+.modal {
+  background-color: $page-background;
+  border: 2px solid $font-color-default;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.modal-container {
+  overflow-y: initial
+}
+
+.modal-body{
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover, &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

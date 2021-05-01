@@ -27,7 +27,7 @@ const Ballot = () => {
     <div>
       <h1>AWARDS 2021</h1>
       <CategoryList categories={ballotData} updateBallot={updateBallot}/>
-      <BallotSubmission />
+      <BallotSubmission ballotResults={ballotResults}/>
     </div>
   )
 }

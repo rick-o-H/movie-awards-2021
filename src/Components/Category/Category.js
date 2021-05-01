@@ -9,7 +9,7 @@ const Category = ({ category, updateBallot }) => {
   return (
     <div className='category'>
       <header>{category.title}</header>
-      <NomineeList nominees={category.items} updateBallot={updateBallot} winner={winner} setWinner={setWinner} categoryID={category.id}/>
+      <NomineeList nominees={category.items} updateBallot={updateBallot} winner={winner} setWinner={setWinner} categoryTitle={category.title}/>
     </div>
   )
 }

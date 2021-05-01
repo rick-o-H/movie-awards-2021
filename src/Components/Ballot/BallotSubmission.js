@@ -1,10 +1,16 @@
-import React from 'react';
+import "./BallotSubmission.scss";
+import React, {useState} from 'react';
+import BallotModal from './BallotModal';
 
+const BallotSubmission = ({ballotResults}) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-const BallotSubmission = () => {
   return (
     <div>
-      {/** THIS WILL BE A COOL BUTTON */}
+      <button className="submit-button" onClick={handleShow}>Submit Ballot</button>
+      <BallotModal show={show} handleClose={handleClose} ballotResults={ballotResults}/>
     </div>
   )
 }

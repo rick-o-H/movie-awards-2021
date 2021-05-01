@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Nominee = ({ nominee, updateBallot, winner, setWinner, categoryID }) => {
+const Nominee = ({ nominee, updateBallot, winner, setWinner, categoryTitle }) => {
   const handleSelection = () => {
     setWinner(nominee);
     const newBallot = {};
-    newBallot[categoryID] = nominee;
+    newBallot[categoryTitle] = nominee;
     updateBallot(newBallot)
   }
   return (
