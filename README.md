@@ -1,3 +1,30 @@
+## Installation
+
+1. Clone the repository:
+```sh
+git clone <repo_link>
+```
+3. Navigate to the root directory of the repository:
+```sh
+cd movie-awards-2021
+```
+3. Install dependencies
+```sh
+yarn
+```
+4. Start the api server
+```sh
+yarn backend
+```
+5. In a new terminal, start the react app
+```sh
+yarn start
+```
+6. A new browser window should appear. Make your selections for each category and then click the Submit Ballot button to view results.
+
+
+
+
 # DailyPay Front End Engineering Challenge
 
 Welcome Candidate and thank you for taking the time to complete the DailyPay take-home challenge for our senior frontend engineer position
