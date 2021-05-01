@@ -2,7 +2,7 @@
 
 1. Clone the repository:
 ```sh
-git clone <repo_link>
+git clone https://github.com/rick-o-H/movie-awards-2021.git
 ```
 3. Navigate to the root directory of the repository:
 ```sh
