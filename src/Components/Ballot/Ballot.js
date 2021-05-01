@@ -6,6 +6,12 @@ import api from '../../Api/Api';
 const Ballot = () => {
   const [ballotData, setBallotData] = useState([]);
 
+  const [ballotResults, setBallotResults] = useState({});
+
+  const updateBallot = (ballotSelection) => {
+    setBallotResults({...ballotResults, ...ballotSelection});
+  }
+
   useEffect(() => {
     let mounted = true;
     api.getBallotData()
@@ -20,7 +26,7 @@ const Ballot = () => {
   return (
     <div>
       <h1>AWARDS 2021</h1>
-      <CategoryList categories={ballotData}/>
+      <CategoryList categories={ballotData} updateBallot={updateBallot}/>
       <BallotSubmission />
     </div>
   )
