@@ -10,14 +10,14 @@ const Nominee = ({ nominee, winner, setWinner }) => {
       <p>{nominee.title}</p>
       <img src={nominee.photoUrL} className="avatar" alt="Movie"></img>
       <div></div>
-      <button disabled>Select Nominee</button>
+      <button disabled className="select-button">Select</button>
       </div>
       :
       <div className='nominee'>
         <p>{nominee.title}</p>
         <img src={nominee.photoUrL} className="avatar" alt="Movie"></img>
-        <div></div>
-        <button onClick={() => {handleSelection()}}>Select Nominee</button>
+        <div> </div>
+        <button className="select-button" onClick={() => {handleSelection()}}>Select</button>
       </div>
 
   )

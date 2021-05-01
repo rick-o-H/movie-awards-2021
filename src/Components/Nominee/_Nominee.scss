@@ -1,34 +1,60 @@
 .avatar {
+  margin: 5px;
+  margin-top: 0px;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
 .nominee {
-  color: $font-color-default;
   padding: 5px;
   background-color: $nominee-card-and-submit-button-default;
-  border: 1px #017263;
   transition: all .5s;
   &:hover {
     color: $font-color-hover;
     background-color: $nominee-card-and-submit-button-hover;
   }
-  button {
-    background-color: darkgray;
+  .select-button {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color:#f9f9f9;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-size:10px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
     &:hover {
-      background-color: rgb(192, 189, 189);
+      background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+      background-color:#e9e9e9;
+    }
+    &:active {
+      position:relative;
+      top:1px;
     }
   }
 }
 
 .selected-nominee {
-  color: $font-color-default;
   padding: 5px;
   background-color: $nominee-card-selected;
   transition: all .5s;
-  button {
+  .select-button {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color:#f9f9f9;
+    padding: 5px 20px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
     opacity: 0.6;
+    font-size:10px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    display:inline-block;
   }
 }
